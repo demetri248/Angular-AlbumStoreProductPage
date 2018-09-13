@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../product.service';
 import { HttpClientModule } from '@angular/common/http';
+import { Album } from '../album';
 
 @Component({
   selector: 'app-product-description',
@@ -8,7 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
   styleUrls: ['./product-description.component.css']
 })
 export class ProductDescriptionComponent implements OnInit {
-albumInfo;
+albumInfo: Album;
 
 
 
